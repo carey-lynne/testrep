@@ -2,6 +2,8 @@ print("this is lab 1, since lab 1 was done on csci environment")
 
 import numpy as np
 import matplotlib.pyplot as plt
+import math as math
+
 x = [1,2,3]
 y= np.array([1,2,3])
 print("this is 3y", 3*y)
