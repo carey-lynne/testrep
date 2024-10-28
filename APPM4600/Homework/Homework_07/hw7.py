@@ -146,7 +146,7 @@ def driver2():
 
         N += 1  # Increase N for the next iteration
 
-#driver2()
+# driver2()
 
 # *********************************************************
 def chebyshev_nodes(a, b, N):
@@ -176,7 +176,7 @@ def barycentric_lagrange(x_nodes, y_nodes, x_grid, w):
     # loop through and calc the sums for the numerator and denom of p(x)
     for j in range(n):
         for i in range(m):
-            if abs(x_grid[i] - x_nodes[j]) < 1e-10: # nearly equal numbers and 0
+            if abs(x_grid[i] - x_nodes[j]) < 1e-10 & i != j: # nearly equal numbers and 0
                 p_num[i] = y_nodes[j]               # set the numerator = f(x_j)
                 p_denom[i] = 1                      # let denominator = 1
             else:
